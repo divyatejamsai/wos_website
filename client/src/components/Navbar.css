@@ -1,0 +1,261 @@
+/* Header Section */
+.header-section {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: var(--white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: #1a1a1a;
+    /* Dark background */
+    color: #ccc;
+    font-size: 0.85rem;
+    padding: 8px 0;
+}
+
+.top-bar-container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar-left {
+    display: flex;
+    gap: 20px;
+}
+
+.top-bar-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.top-bar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-icon-box {
+    background-color: #fff;
+    color: #333;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.top-social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.top-social-icons a {
+    color: #ccc;
+    transition: color 0.2s;
+}
+
+.top-social-icons a:hover {
+    color: var(--white);
+}
+
+/* Navbar */
+.navbar {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    max-width: 1500px;
+    padding: 0 20px;
+}
+
+.navbar-logo {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    height: 60px;
+    width: auto;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+}
+
+.nav-item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 0.5rem;
+    height: 100%;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+}
+
+.nav-links:hover {
+    color: var(--primary-red);
+}
+
+.home-icon {
+    color: var(--primary-red);
+}
+
+/* Account Button & Dropdown */
+.nav-btn-container {
+    display: flex;
+    align-items: center;
+}
+
+.account-dropdown {
+    position: relative;
+}
+
+.btn-account {
+    background-color: var(--primary-red);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-account:hover {
+    background-color: #b71c1c;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--white);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.dropdown-link {
+    padding: 10px 20px;
+    color: var(--text-main);
+    text-decoration: none;
+    text-align: left;
+    transition: background-color 0.2s;
+}
+
+.dropdown-link:hover {
+    background-color: var(--light-gray);
+    color: var(--primary-red);
+}
+
+/* Mobile */
+.menu-icon {
+    display: none;
+}
+
+.mobile-only {
+    display: none;
+}
+
+@media screen and (max-width: 1100px) {
+    .top-bar {
+        display: none;
+        /* Hide top bar on mobile for simplicity or stack it */
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 90vh;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        background-color: var(--white);
+        gap: 0;
+    }
+
+    .nav-menu.active {
+        background: var(--white);
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+
+    .nav-links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    .nav-links:hover {
+        background-color: var(--light-gray);
+        color: var(--primary-red);
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 20px;
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: var(--text-main);
+    }
+
+    .nav-btn-container {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+}

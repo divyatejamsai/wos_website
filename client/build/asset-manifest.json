@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d1425884.chunk.css",
+    "main.js": "/static/js/main.948bef40.chunk.js",
+    "main.js.map": "/static/js/main.948bef40.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.0688f379.js",
+    "runtime-main.js.map": "/static/js/runtime-main.0688f379.js.map",
+    "static/js/2.8611101c.chunk.js": "/static/js/2.8611101c.chunk.js",
+    "static/js/2.8611101c.chunk.js.map": "/static/js/2.8611101c.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.d1425884.chunk.css.map": "/static/css/main.d1425884.chunk.css.map",
+    "static/js/2.8611101c.chunk.js.LICENSE.txt": "/static/js/2.8611101c.chunk.js.LICENSE.txt",
+    "static/media/fieo_cert.edab4204.png": "/static/media/fieo_cert.edab4204.png",
+    "static/media/iso_cert.91afabf4.png": "/static/media/iso_cert.91afabf4.png",
+    "static/media/map_china.72f95b95.png": "/static/media/map_china.72f95b95.png",
+    "static/media/map_india.0a98e803.png": "/static/media/map_india.0a98e803.png",
+    "static/media/map_japan.cfb05306.png": "/static/media/map_japan.cfb05306.png",
+    "static/media/map_korea.e4813d58.png": "/static/media/map_korea.e4813d58.png",
+    "static/media/mrai_cert.dca679b9.png": "/static/media/mrai_cert.dca679b9.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0688f379.js",
+    "static/js/2.8611101c.chunk.js",
+    "static/css/main.d1425884.chunk.css",
+    "static/js/main.948bef40.chunk.js"
+  ]
+}
